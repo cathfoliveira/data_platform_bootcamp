@@ -12,9 +12,9 @@ dsn = (
     "host={host} ".format(
         dbname="orders",
         user="postgres",
-        password="i0i4Aq.EdG-3xFZ-vHxN3MQWLnRYPZ",
-        port=5432,
-        host="rds-develop-orders-db.cjnuetkuukxi.sa-east-1.rds.amazonaws.com",
+        password=os.environ['password-rds'],
+        port=os.environ['port-rds'],
+        host=os.environ['host-rds'],
     )
 )
 

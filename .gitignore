@@ -12,3 +12,6 @@ cdk.out
 .idea
 .DS_Store
 pip-wheel-metadata
+
+# Test file
+insert_to_rds_prod.py
