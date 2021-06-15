@@ -8,7 +8,7 @@ client = boto3.client("firehose")
 def put_record(event):
     data = json.dumps(event) + "\n"
     response = client.put_record(
-        DeliveryStreamName="firehose-develop-raw-delivery-stream",
+        DeliveryStreamName="firehose-develop-raw-delivery-stream", # Nome pode ser verificado na tela do Kinesis Firehose.
         Record={"Data": data},
     )
     print(event)
